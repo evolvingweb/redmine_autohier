@@ -20,8 +20,6 @@ module WikiPagePatch
       path = self.title.split(/\>/)
       if path.length > 1
         self.parent_title = path[0...-1].join('>')
-      else
-        self.parent = nil
       end
 
       # @previous_title has been set by WikiPage#title=
